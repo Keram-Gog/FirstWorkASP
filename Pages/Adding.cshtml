@@ -1,0 +1,27 @@
+﻿@page
+@model AddModel
+
+<div class="text-center">
+    <h1>Добавить данные</h1>
+</div>
+
+<div>
+    <h5>Новое мероприятие</h5>
+    <form action="/Adding" method="post">
+        <div class="mb-3">
+            <label for="nameAdd" class="form-label" >Язык программирования</label>
+            <input type="text" class="form-control" id="nameAdd" name="nameAdd" />
+        </div>
+        <div class="mb-3">
+            <label for="typeAdd" class="form-label">Тип</label>
+         <input type="text" class="form-control" id="typeAdd" name="typeAdd"/>
+         </div>
+        <div class="mb-3">
+            <label for="reitingAdd" class="form-label">Рейтинг</label>
+            <input type="text" class="form-control" id="reitingAdd" name="reitingAdd" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+    </form>
+</div>
+
